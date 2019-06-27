@@ -1,1 +1,1 @@
->tsc filename.ts
+>ts-node filename.ts
