@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/jukes311/javascript#readme",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.4.0",
+    "lodash": "^4.17.11",
+    "node-fetch": "^2.6.0"
   }
 }
