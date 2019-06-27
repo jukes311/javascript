@@ -1,8 +1,8 @@
 try
 {
-    var result  =  Sum(10, 20); // Sum is not defined yet
+    throw "Error occurred";
 }
 catch(ex)
 {
-    console.log(ex)
+    console.log(ex);
 }
