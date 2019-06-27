@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "anything javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jukes311/javascript.git"
+  },
+  "author": "CS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jukes311/javascript/issues"
+  },
+  "homepage": "https://github.com/jukes311/javascript#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
