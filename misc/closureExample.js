@@ -1,3 +1,8 @@
+/*
+Closure is when inner functions has access to outer functions variables.
+*/
+
+
 var counter = (function() {
     var privateCounter = 0;
     function changeBy(val) {
