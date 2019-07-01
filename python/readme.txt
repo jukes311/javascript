@@ -1,1 +1,0 @@
-These are tutorial files for python.
