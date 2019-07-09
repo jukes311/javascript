@@ -8,10 +8,14 @@ class LearnState extends React.Component {
             count: 0
         }
 
+        this.handleClick = this.handleClick.bind(this)
+
     }
 
     handleClick() {
-        console.log('clicked.')
+        this.setState({
+            count: 1
+        })
     }
 
     render() {
