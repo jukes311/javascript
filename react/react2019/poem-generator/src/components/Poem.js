@@ -1,33 +1,29 @@
 import React from 'react'
-//import PoemsData from '../data/PoemsData'
+// import PoemsData from '../data/PoemsData'
 import Authors from '../data/Authors'
 
 class Poem extends React.Component {
-    // constructor() {
-    //     super()
-    //     this.state = {
-    //        authors: []
-    //     }
-    // }
+    constructor() {
+        super()
+        this.state = {
+            authors: []
+        }
+    }
 
     componentDidMount() {
-        console.log(Authors)
-        this.setState({
-            authors: Authors.then(item => item)
+        Authors.then(data => {
+            const arrayOfAuthors = data.map(item => <li> {item} </li>)
+            this.setState({authors: arrayOfAuthors})
         })
     }
 
     render() {
 
 
-        return(
+        return (
             <div>
                 <h3>Authors</h3>
-                <ul>
-                { 
-                    //this.state.authors.map( item => <li> {item} </li>)
-                }
-                </ul>
+                <ul> {this.state.authors} </ul>
             </div>
         )
 
