@@ -1,17 +1,13 @@
 import React from 'react'
-
-import LearnState from './LearnState'
+import Todos from './Todos'
 
 class MainContent extends React.Component {
 
     render() {
-        const firstName = "Chris"
-        const lastName = "Salaman"
-
         return(
-            <div className='mainContent'>
-                <p>{ `${firstName} ${lastName}`}</p>
-                <LearnState />
+            <div>
+                <h1>Todos</h1>
+                    <Todos />
             </div>
         )
     }
