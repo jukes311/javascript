@@ -1,5 +1,7 @@
 import React from 'react'
 
+import LearnState from './LearnState'
+
 class MainContent extends React.Component {
 
     render() {
@@ -9,6 +11,7 @@ class MainContent extends React.Component {
         return(
             <div className='mainContent'>
                 <p>{ `${firstName} ${lastName}`}</p>
+                <LearnState />
             </div>
         )
     }
