@@ -1,13 +1,26 @@
 import React from 'react'
-import Todos from './Todos'
+import Conditional from './Conditional'
 
 class MainContent extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            isLoading: true
+        }
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({
+                isLoading: false
+            })
+        }, 1500)
+    }
 
     render() {
         return(
             <div>
-                <h1>Todos</h1>
-                    <Todos />
+                <Conditional isLoading={this.state.isLoading} />
             </div>
         )
     }
