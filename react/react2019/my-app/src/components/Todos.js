@@ -13,6 +13,7 @@ class Todos extends React.Component {
 
     handleChange(id) {
         this.setState(prevState => {
+            //map function
             const updatedTodos = prevState.todos.map(todo => {
                 if(todo.id === id) {
                     todo.completed = !todo.completed
@@ -20,6 +21,7 @@ class Todos extends React.Component {
                 return todo
             })
 
+            //return value
             return {
                 todos: updatedTodos
             }
@@ -27,7 +29,6 @@ class Todos extends React.Component {
     }
 
     render() {
-    
         const todoItems = this.state.todos.map(item => <TodoItem key={item.id} id={item.id} item={item} handleChange={this.handleChange} />)
 
         return(
